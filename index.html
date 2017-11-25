@@ -1,38 +1,57 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Hangman Game</title>
-
+	<meta charset="UTF-8">
+	<title>Hangman</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style1.css">
-	<script 
-		src="https://code.jquery.com/jquery-3.2.1.min.js"
-		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-		crossorigin="anonymous"></script>
-	<script type="text/javascript" src="game1.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 <body>
 	<header>
-	<div id="topheading">Hangman Game</div>
-	<div class="spacer"></div>
-	</header>
-	<div class="container gameContent">
+		<h1>HANGMAN</h1>
+		<h2>"May the odds be ever in your favor"</h2>
+		
+    </header>
+	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
-				<div id="imageHolder"><img id="hangman" src="man1.png"></div>
-			</div>
-			<div class="col-md-6">
-				<div id="wordHolder"></div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div id="feedback">Feedback:</div>
-			</div>
-			<div class="col-md-6">
-				<div id="guesses">Previous guesses: </div>
-					<p></p>
+			<div class="col-md-6 col-md-offset-3 main">
+				<div class="row">
+					<div class="col-md-6">
+						<img id="changeimg" src="assets/images/firebird.jpg" width="200" height="200"/>
+					</div>
+					<div class="col-md-6">
+						<h4>PRESS ANY KEY TO START!</h4>
+						<div>
+							<h4>CURRENT WORD:</h4> 
+							<h4 id="currentword"></h4>
+						</div>
+						<div>
+							<h4>NUMBER OF GUESSES REMAINING:</h4>
+							<h4 id="guessesNumber"></h4>
+						</div>
+						<div>
+							<h4>WRONG GUESSES:</h4>
+							<h4 id="letterGuess"></h4>
+						</div>
+						<div>
+							<h4>WINS:</h4>
+						<h4 id="winscounter"></h4>
+						</div>
+						<div>
+							<h4>LOSSES:</h4>
+						<h4 id="losscounter"></h4>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+	<div id="audiocenter">
+	<audio controls autoplay>
+			<source src="hungergamestheme.mp3" type="audio/mpeg">
+	</audio>
+	</div>
+
 </body>
 </html>

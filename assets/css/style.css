@@ -1,61 +1,25 @@
 body {
-	background: lavender;
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	background: url("http://www.scholastic.com/thehungergames/images/downloads/HG_WALLPAPER_2_1024X768.jpg");
 }
-#topheading{
-	height: 50px;
-	font-size: 24px;
-	width: 800px;
-	border-bottom: solid black 1px;
-	margin: auto;
+
+header {
+	background: black;
+	color: white;
 	text-align: center;
+	font-family: Papyrus,fantasy;
+}
+h1 {
+
 }
 
-.gameContent{
-	height: 400px;
-	width: 800px;
-	margin: auto;
-	background: lightgray;
-	position: relative;
-}
-
-.spacer{height: 30px;}
-
-#wordHolder{
+.main {
+	color: white;
 	margin-top: 50px;
-	margin-left: 150px;
-}
-#s {
-	font-size: 24px;
-}
-#guesses {
-	margin-top: 20px;
-	margin-left: 150px;
-	font-size: 24px;
+	border: medium dashed orange;
 }
 
-#imageHolder{
-	width: 75px;
-	margin-left: 30px;
-	margin-top: 10px;
-
-}
-
-#imageHolder img{
-	position: relative;
-}
-
-#feedback {
-	margin-left: 150px;
-	margin-top: 20px;
-	font-size: 24px;
-
-}
-
-#finalmsg {
-	font-size: 24px;
-	text-align: center;
-	width: 90%;
-	margin: auto;
-	margin-top: 10px;
+#audiocenter {
+	
+	margin: 0 auto;
+	margin-top: 50px;
 }
